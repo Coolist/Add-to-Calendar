@@ -21,12 +21,23 @@
 		<h2>Add To Calendar</h2>
 		<div class="main">
 			<span>You can add to calendar.</span>
+			<div class="calendar_event">
+				<span class="e_name">Event Test Name</span>
+				<span class="e_description">This is a fun test event!</span>
+				<span class="e_date_start">25/6/2014</span>
+				<span class="e_date_end">25/6/2014</span>
+			</div>
 		</div>
 	</div>
 
 	<!-- Javascript -->
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/addtocalendar.js"></script>
+	<script>
+	$(function() {
+		var calendar = $('.calendar_event').addToCalendar();
+	});
+	</script>
 
 </body>
 </html>
